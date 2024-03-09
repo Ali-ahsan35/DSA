@@ -6,7 +6,7 @@ function isPowerOfTwo(n) {
         if (n % 2 !== 0) {
             return false;
         }
-        n = n % 2;
+        n = n / 2;
     }
     return true;
 }
@@ -14,4 +14,4 @@ function isPowerOfTwo(n) {
 const result = isPowerOfTwo(5);
 console.log(result);
 
-// Big-O ---> O(n)
+// Big-O ---> O(logn)
